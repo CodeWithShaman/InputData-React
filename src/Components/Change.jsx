@@ -14,16 +14,15 @@ function Change() {
     }
   return (
     <div>
-     <div className="searchbox-wrap">
-    <input id='inputData' type="text" placeholder="Write something send inside card" onChange={changeValue} />
-    <button onClick={dataValue}><span>Send</span> </button>
-    <br />
-    </div>
-    <div className='center'>
-    <h1 className='box'>{get}</h1>
-    </div>
-    {/* <input id='inputData' type="text" onChange={changeValue} /> */}
-    {/* <button onClick={dataValue}>Click Here</button> */}
+    <div className="formContainer">
+    {/* <form action=""> */}
+      <fieldset className="fieldInput">
+        <input id='inputData' className="form-input" type="text" placeholder="Write something...." onChange={changeValue}/>
+        <button onClick={dataValue} type="submit" className="form-submit">Send</button>
+      </fieldset>
+    {/* </form> */}
+  </div>
+  <h1 className='box'>{get}</h1>
     </div>
   )
 }
